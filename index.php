@@ -11,7 +11,7 @@
 //    Mapping all routes
     try {
         if (empty($_GET['page'])) {
-            require "";
+            require "views/partials/template.php";
         } else {
             $url = explode("/", filter_var($_GET['page']), FILTER_SANITIZE_URL);
             try {
